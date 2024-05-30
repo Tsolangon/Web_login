@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <AppBar position="static">
       <Toolbar>
-        <h1 className={classes.title}>Login/Signup</h1>
+        <h2 className={classes.title}>LOGIN/SIGNUP</h2>
         <Button color="inherit" component={Link} to="/login">
           Login
         </Button>

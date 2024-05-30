@@ -133,16 +133,23 @@ export default function Signup() {
             helperText={confirmPasswordError}
           />
           <Button
-            className={classes.submit}
+            sx={{
+              marginTop: 2,
+              backgroundColor: '#00008B', // Dark blue color
+              color: 'white', // Ensure the text color is readable
+              '&:hover': {
+                backgroundColor: '#000080', // Optionally set a different color on hover
+              },
+            }}
             variant="contained"
-            color="primary"
             type="submit"
             fullWidth
           >
-            Signup{" "}
+            Signup
           </Button>
         </form>
       </Paper>
     </Container>
   );
 }
+
